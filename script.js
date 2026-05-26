@@ -1,3 +1,6 @@
+// INTEGRANTES
+// Jazmin Zorrilla
+
 function enviarDatos() {
     // EL js entra al HTML y captura lo que escribio el usuario.
     const nombre = document.getElementById("nombre").value;
