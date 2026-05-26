@@ -1,0 +1,164 @@
+/* ===== ESTILO GENERAL ===== */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-family: "Segoe UI", sans-serif;
+
+    background: linear-gradient(
+        135deg,
+        #74ebd5 0%,
+        #9face6 50%,
+        #a18cd1 100%
+    );
+
+    overflow: hidden;
+}
+
+/* ===== TITULO ===== */
+
+h1{
+    position: absolute;
+    top: 70px;
+
+    color: white;
+
+    font-size: 42px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+
+/* ===== TARJETA ===== */
+
+.formulario{
+    width: 380px;
+
+    padding: 40px 35px;
+
+    border-radius: 28px;
+
+    background: rgba(255,255,255,0.25);
+
+    backdrop-filter: blur(15px);
+
+    border: 1px solid rgba(255,255,255,0.35);
+
+    box-shadow:
+        0 15px 35px rgba(0,0,0,0.12);
+
+    animation: aparecer 0.6s ease;
+}
+
+/* ===== INPUTS ===== */
+
+.formulario input{
+    width: 100%;
+
+    padding: 16px 18px;
+
+    margin-bottom: 18px;
+
+    border: none;
+    outline: none;
+
+    border-radius: 16px;
+
+    background: rgba(255,255,255,0.6);
+
+    font-size: 15px;
+
+    color: #333;
+
+    transition: 0.25s;
+}
+
+.formulario input::placeholder{
+    color: #666;
+}
+
+.formulario input:focus{
+    transform: scale(1.02);
+
+    background: white;
+
+    box-shadow:
+        0 0 0 4px rgba(255,255,255,0.4);
+}
+
+/* ===== BOTON ===== */
+
+.formulario button{
+    width: 100%;
+
+    padding: 15px;
+
+    border: none;
+    border-radius: 16px;
+
+    background: linear-gradient(
+        135deg,
+        #667eea,
+        #764ba2
+    );
+
+    color: white;
+
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.25s;
+}
+
+.formulario button:hover{
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 12px 25px rgba(118,75,162,0.35);
+}
+
+.formulario button:active{
+    transform: scale(0.98);
+}
+
+/* ===== ANIMACION ===== */
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.demoTitulo {
+    position: absolute;
+    top: 20px;
+
+    color: white;
+
+    font-size: 52px;
+    font-weight: 600;
+
+    letter-spacing: 1px;
+
+    text-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
