@@ -1,5 +1,6 @@
 // INTEGRANTES
 // Jazmin Zorrilla
+// Alcides Monges
 
 function enviarDatos() {
     // EL js entra al HTML y captura lo que escribio el usuario.
