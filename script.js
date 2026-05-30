@@ -1,6 +1,8 @@
 // INTEGRANTES
 // Jazmin Zorrilla
 // Alcides Monges
+// Giovanni Rojas
+// Gianluca Pane
 
 function enviarDatos() {
     // EL js entra al HTML y captura lo que escribio el usuario.
