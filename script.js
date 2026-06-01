@@ -1,6 +1,5 @@
 // INTEGRANTES
 // Jazmin Zorrilla
-// Giovanni Rojas
 // Gianluca Pane
 
 function enviarDatos() {
