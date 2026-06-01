@@ -1,6 +1,7 @@
 // INTEGRANTES
 // Jazmin Zorrilla
 // Gianluca Pane
+// Ricardo Servian
 
 function enviarDatos() {
     // EL js entra al HTML y captura lo que escribio el usuario.
@@ -19,7 +20,7 @@ function enviarDatos() {
 
     //Convertimos el objeto JavaScript a JSON.
     // JSON.stringify() convierte un objeto JavaScript a una cadena JSON.
-    // El segundo parámetro es una función de reemplazo (en este caso, null) y el 
+    // El segundo parámetro es una función de reemplazo (en este caso, null) y el
     // tercer parámetro es el número de espacios para la sangría (en este caso, 2)
     // para hacer que el JSON sea más legible.
     const jsonUsuario = JSON.stringify(usuario, null, 2);
@@ -42,7 +43,7 @@ function enviarDatos() {
         body: jsonUsuario
     })
 
-    // EL JS RECIBE la respuesta del servidor 
+    // EL JS RECIBE la respuesta del servidor
     .then(response => response.json())
     .then(data => {
         console.log("Respuesta recibida desde PHP:");
